@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-oop-shop-2", "csharp-oop-shop-2.csproj", "{5CC44C28-D5B8-48D2-9C12-EDAA5E58EE9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp-oop-shop-3", "csharp-oop-shop-3.csproj", "{5CC44C28-D5B8-48D2-9C12-EDAA5E58EE9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
