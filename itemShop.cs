@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -57,13 +58,13 @@ namespace CSharp_Composizione_Shop
             throw new NotImplementedException();
         }
     }
-    class Fluid : itemShop
+    class WaterInBottle : itemShop
     {
         private protected float quantity = 1.3f;
         private protected float acidityPH;
         private protected string sorgente = "";
 
-        public Fluid(string name, float quantity, float acidityPH, string sorgente) : base(name)
+        public WaterInBottle(string name, float quantity, float acidityPH, string sorgente) : base(name)
         {
             name = "";
             this.quantity = quantity;
@@ -74,7 +75,13 @@ namespace CSharp_Composizione_Shop
 
         }
 
+        public static float ConvertToGallons ()
+        {
+            float quantityUSGal = 0f;
+            quantityUSGal = quantity / 3.785;
+            return quantityUSGal;
 
+        }
 
 
         public float GetFluidQuantity()
@@ -122,6 +129,12 @@ namespace CSharp_Composizione_Shop
             this.quantity = 0;
             return this.quantity;
         }
+
+      
+
+
+
+
     }
 
 }

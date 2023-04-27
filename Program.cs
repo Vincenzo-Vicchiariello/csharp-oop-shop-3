@@ -6,7 +6,7 @@ using CSharp_Composizione_Shop;
 Shop negozio = new Shop("Despar Teggiano", "Salerno", "Via Oronzo Caldarola", 71, "Alimentare");
 
 // DEFINISCO I PRODOTTI CHE IL MIO SHOP TRATTA
-Fluid acquaNaturale = new Fluid("Acqua Naturale", 1.5f, 6.8f, "Rebruant");
+WaterInBottle acquaNaturale = new WaterInBottle("Acqua Naturale", 1.5f, 6.8f, "Rebruant");
 // DEFINISCO LE CATEGOIRE PER I MIEI PRODOTTO
 
 Category acquaN = new Category("Acqua" , "Microbiologicamente Pura, Oligominerale, Minimamente Mineralizzata. Indicata per le diete povere di sodio. Può avere effetti diuretici.");
