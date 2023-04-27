@@ -66,11 +66,20 @@ namespace CSharp_Composizione_Shop
 
         public WaterInBottle(string name, float quantity, float acidityPH, string sorgente) : base(name)
         {
-            name = "";
-            this.quantity = quantity;
-            this.acidityPH = acidityPH;
-            this.quantity = quantity;
-            this.sorgente = sorgente;
+            if (acidityPH < 0 || acidityPH > 10) {
+                throw new Exception("Il pH non va bene.");
+                //Console.WriteLine("Il pH non va bene");
+            }
+            else
+            {
+                this.acidityPH = acidityPH;
+                name = "";
+                this.quantity = quantity;
+                this.quantity = quantity;
+                this.sorgente = sorgente;
+            }
+
+            
 
 
         }
@@ -78,7 +87,7 @@ namespace CSharp_Composizione_Shop
         public static float ConvertToGallons ()
         {
             float quantityUSGal = 0f;
-            quantityUSGal = 3.785f;
+            quantityUSGal =   3.785f;
             return quantityUSGal;
 
         }
