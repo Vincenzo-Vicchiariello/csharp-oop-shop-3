@@ -78,7 +78,7 @@ namespace CSharp_Composizione_Shop
         public static float ConvertToGallons ()
         {
             float quantityUSGal = 0f;
-            quantityUSGal = quantity / 3.785;
+            quantityUSGal = 3.785f;
             return quantityUSGal;
 
         }
